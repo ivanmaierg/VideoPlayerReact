@@ -1,0 +1,81 @@
+.link{
+    text-decoration:none;
+    color:white;
+}
+.header__menu {
+    display: flex;
+    margin: 0;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.header__menu--profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: auto;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+
+.header__menu--profile img {
+    width: 2rem;
+    margin: auto;
+    margin-right: 1rem;
+}
+
+.header__menu:hover ul,
+ul:hover {
+    display: flex;
+    visibility: visible;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 9rem;
+    height: 5rem;
+
+}
+
+.header__menu ul {
+    display: inline;
+    margin-top: 1rem;
+    visibility: hidden;
+    list-style: none;
+    position: absolute;
+    top: 2.5rem;
+    background-color: #181C1F;
+    width: 8rem;
+    height: 4rem;
+    right: 0.3rem;
+    padding: 0;
+    text-align: right;
+    font-size: 1.5ch;
+    text-transform: capitalize;
+    letter-spacing: 0;
+    align-items: flex-end;
+    justify-content: space-around;
+    border-radius: 3px;
+    padding-top: 1rem;
+}
+
+.header__menu--profile ul li {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.header__menu--profile ul li:hover {
+    background-color: #22272B;
+}
+
+.header__menu--profile ul li a {
+    color: white;
+    width: 100%;
+    text-decoration: none;
+    padding: 0 1rem;
+}
