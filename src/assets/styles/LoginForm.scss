@@ -222,6 +222,7 @@
 /* Style the checkmark/indicator */
 
 .container--checkbox .checkmark:after {
+    transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     border-width: 0 2px 2px 0;
@@ -229,6 +230,5 @@
     height: 10px;
     left: 7px;
     top: 2px;
-    transform: rotate(45deg);
     width: 3px;
 }
