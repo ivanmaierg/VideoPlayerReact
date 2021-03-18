@@ -3,19 +3,20 @@
     text-decoration:none;
 }
 .header__menu {
+    display: flex;
     align-items: flex-end;
     cursor: pointer;
-    display: flex;
     margin: 0;
 }
 
 .header__menu--profile {
-    align-items: center;
+  
     display: flex;
     flex-direction: row;
     font-size: 1rem;
     font-weight: 700;
     justify-content: center;
+    align-items: center;
     letter-spacing: 0.5rem;
     margin: auto;
     text-transform: uppercase;
@@ -40,12 +41,12 @@ ul:hover {
 }
 
 .header__menu ul {
+    display: flex;
     align-items: flex-end;
     background-color: #181C1F;
     border-radius: 3px;
-    display: inline;
     font-size: 1.5ch;
-    height: 4rem;
+    height: auto;
     justify-content: space-around;
     letter-spacing: 0;
     list-style: none;

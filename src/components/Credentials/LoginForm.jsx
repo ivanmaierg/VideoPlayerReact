@@ -38,7 +38,10 @@ const LoginForm = (props) => {
               {' '}
               Recuérdame
             </label>
-            <a href='/' className=''>Olvidé mi contraseña</a>
+            <a href='/' className=''>
+              {' '}
+              Olvidé mi contraseña
+            </a>
           </div>
         </form>
         <section className='login__container--social-media'>

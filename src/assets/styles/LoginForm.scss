@@ -26,16 +26,16 @@
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
-
+    
 }
 
 .login__container--remember-me {
+    display: flex;
+    justify-content: space-between;
     align-items: baseline;
     bottom: -50px;
     color: white;
-    display: flex;
     font-size: 0.8rem;
-    justify-content: space-between;
     width: 100%;
 }
 
@@ -44,9 +44,11 @@
 }
 
 .login__container--remember-me a {
+    margin:auto;
     color: white;
     text-decoration: none;
     font-size: 1rem;
+    margin-left: 1rem;
 }
 
 .login__container--remember-me a:hover {
