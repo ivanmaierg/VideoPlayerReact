@@ -1,42 +1,42 @@
 .login {
-    display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 1rem;
-    min-height: calc(100vh - 9rem);
-    margin-bottom: 1rem;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;
+    min-height: calc(100vh - 9rem);
+    padding: 0 1rem;
 }
 
 .login__container {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    border: 2px white solid;
-    padding: 3rem 3rem 3rem;
-    border-radius: 40px;
-    height: 100%;
-    width: 25rem;
     background-color: #a4b0b900;
+    border-radius: 40px;
+    border: 2px white solid;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    padding: 3rem 3rem 3rem;
+    width: 25rem;
 }
 
 .login__container--form {
-    margin-top: 1rem;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-top: 1rem;
 
 }
 
 .login__container--remember-me {
-    color: white;
-    font-size: 0.8rem;
-    bottom: -50px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
     align-items: baseline;
+    bottom: -50px;
+    color: white;
+    display: flex;
+    font-size: 0.8rem;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .login__container--remember-me label input {
@@ -55,8 +55,8 @@
 }
 
 .login__container--social-media>div {
-    display: flex;
     align-items: flex-end;
+    display: flex;
     font-size: 0.8rem;
     margin-bottom: 0.8rem;
     margin-top: 0.8rem
@@ -83,10 +83,10 @@
 }
 
 .login__container--register a {
+    color: white;
     font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
-    color: white;
 }
 
 .login__container--register a:hover {
@@ -98,16 +98,16 @@
         height: 100%;
     }
     .login__container {
-        padding: 1rem;
-        width: auto;
         border-radius: 0;
         border: none;
+        padding: 1rem;
+        width: auto;
     }
     .login__container--register {
+        align-items: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
         margin-top: 1rem
     }
     .login__container--register a{
@@ -117,105 +117,60 @@
         margin-top: 1rem;
     }
     .login__container--remember-me{
+        align-items: center;
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
 }
 
 @media only screen and (min-width:1280px) {
     .login__container {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
         border: 2px white solid;
-        padding: 3rem 3rem 3rem;
+        display: flex;
+        flex-direction: column;
         height: 100%;
+        justify-content: space-around;
+        padding: 3rem 3rem 3rem;
         width: 25rem;
     }
 }
 
 //login button
 
-.button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 10rem;
-    background-color: rgba(255, 255, 255, 0.014);
-    color: white;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-family: 'Gothic A1', sans-serif;
-    font-weight: bold;
-    height: 3.2rem;
-    margin: 2rem 0rem;
-    letter-spacing: 1px;
-    border: 1px solid rgba(255, 255, 255, 0.342);
-}
-
-.button:hover {
-    background-color: rgba(255, 255, 255, 0.144);
-    transition: ease-in 0.2s;
-}
-
-.btn {
-    display: flex;
-    background-color: rgba(134, 124, 124, 0.322);
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-family: 'Gothic A1', sans-serif;
-    font-weight: bold;
-    height: 1.5rem;
-    letter-spacing: 1px;
-    border: 1px solid rgba(255, 255, 255, 0.342);
-    padding: 0.5rem;
-    text-align: center;
-    align-items: center;
-}
-
-.btn:hover {
-    background-color: rgba(255, 255, 255, 0.164);
-    transition: ease-in 0.2s;
-}
-
 .login__change-status-button{
-    border: none;
     background-color: transparent;
+    border: none;
     color:white;
     
 }
 .login__change-status-button:hover{
-       text-decoration: underline; 
        cursor: pointer;
+       text-decoration: underline; 
     }
 //checkbox
 .container--checkbox {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+    display: block;
     font-size: 1rem;
+    font-size: 22px;
+    margin-bottom: 12px;
+    padding-left: 35px;
+    position: relative;
+    user-select: none;
 }
 
 
 /* Hide the browser's default checkbox */
 
 .container--checkbox input {
-    position: absolute;
-    opacity: 0;
     cursor: pointer;
     height: 0;
+    opacity: 0;
+    position: absolute;
     width: 0;
 }
 
@@ -223,12 +178,12 @@
 /* Create a custom checkbox */
 
 .checkmark {
+    background-color: #eee;
+    height: 1rem;
+    left: 10px;
     position: absolute;
     top: 2px;
-    left: 10px;
-    height: 1rem;
     width: 1rem;
-    background-color: #eee;
 }
 
 
@@ -265,13 +220,13 @@
 /* Style the checkmark/indicator */
 
 .container--checkbox .checkmark:after {
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    border-width: 0 2px 2px 0;
+    border: solid white;
+    height: 10px;
     left: 7px;
     top: 2px;
-    width: 3px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+    width: 3px;
 }

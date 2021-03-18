@@ -1,72 +1,72 @@
 .link{
-    text-decoration:none;
     color:white;
+    text-decoration:none;
 }
 .header__menu {
-    display: flex;
-    margin: 0;
     align-items: flex-end;
     cursor: pointer;
+    display: flex;
+    margin: 0;
 }
 
 .header__menu--profile {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-weight: 700;
     font-size: 1rem;
+    font-weight: 700;
+    justify-content: center;
+    letter-spacing: 0.5rem;
     margin: auto;
     text-transform: uppercase;
-    letter-spacing: 0.5rem;
 }
 
 .header__menu--profile img {
-    width: 2rem;
-    margin: auto;
     margin-right: 1rem;
+    margin: auto;
+    width: 2rem;
 }
 
 .header__menu:hover ul,
 ul:hover {
-    display: flex;
-    visibility: visible;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 9rem;
+    display: flex;
+    flex-direction: column;
     height: 5rem;
+    justify-content: center;
+    visibility: visible;
+    width: 9rem;
 
 }
 
 .header__menu ul {
-    display: inline;
-    margin-top: 1rem;
-    visibility: hidden;
-    list-style: none;
-    position: absolute;
-    top: 2.5rem;
-    background-color: #181C1F;
-    width: 8rem;
-    height: 4rem;
-    right: 0.3rem;
-    padding: 0;
-    text-align: right;
-    font-size: 1.5ch;
-    text-transform: capitalize;
-    letter-spacing: 0;
     align-items: flex-end;
-    justify-content: space-around;
+    background-color: #181C1F;
     border-radius: 3px;
+    display: inline;
+    font-size: 1.5ch;
+    height: 4rem;
+    justify-content: space-around;
+    letter-spacing: 0;
+    list-style: none;
+    margin-top: 1rem;
     padding-top: 1rem;
+    padding: 0;
+    position: absolute;
+    right: 0.3rem;
+    text-align: right;
+    text-transform: capitalize;
+    top: 2.5rem;
+    visibility: hidden;
+    width: 8rem;
 }
 
 .header__menu--profile ul li {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: end;
     align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: end;
+    width: 100%;
 }
 
 .header__menu--profile ul li:hover {
@@ -75,7 +75,7 @@ ul:hover {
 
 .header__menu--profile ul li a {
     color: white;
-    width: 100%;
-    text-decoration: none;
     padding: 0 1rem;
+    text-decoration: none;
+    width: 100%;
 }

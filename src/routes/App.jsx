@@ -5,6 +5,7 @@ import Error from '../components/Error';
 import Home from '../containers/Home';
 import Layout from '../containers/Layout';
 import Login from '../containers/Login';
+import Player from '../containers/Player';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <Route exact path='/login' component={Login} />
           <Route exact path='/home' component={Home} />
           <Route exact path='/register' component={RegisterForm} />
+          <Route exact path='/player/:id' component={Player} />
           <Route exact path='/'>
             <Redirect to='/home' />
           </Route>

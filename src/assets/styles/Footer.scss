@@ -1,15 +1,15 @@
 .footer {
-    display: flex;
-    width: 100%;
     align-items: center;
-    height: 3rem;
     background-color: #181C1F;
+    display: flex;
+    height: 3rem;
+    width: 100%;
 }
 
 .footer a {
+    color: white;
     cursor: pointer;
     font-size: 0.8rem;
-    color: white;
     padding-left: 1rem;
     text-decoration: none;
 }

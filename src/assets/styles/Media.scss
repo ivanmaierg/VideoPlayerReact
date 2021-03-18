@@ -10,8 +10,8 @@
 
 @media only screen and (max-width:600px){
     .header{
-      width: 100vw;
       overflow: hidden!important;
+      width: 100vw;
     .link{margin: auto 0;}
   }
     .header__menu--profile p{
@@ -25,25 +25,25 @@
        height: 300px!important;
    }
     .body{
-        width: 100%;
         display: flex;
         justify-content: center;
+        width: 100%;
     }
     .footer{
-        justify-content: flex-start;
         align-items: flex-start!important;
         flex-direction: column;
-        padding: 1rem 0.5rem;
         height: auto!important;
+        justify-content: flex-start;
+        padding: 1rem 0.5rem;
     }
     .carousel-item {
-        width: 150px!important;
         height: 200px!important;
+        width: 150px!important;
     }
     .categories__title {
         font-size: 1rem!important;
-        width: 100%;
         margin-top: 2rem;
+        width: 100%;
     }
 
 }

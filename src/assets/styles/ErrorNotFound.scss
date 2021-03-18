@@ -1,33 +1,33 @@
 .container{
-  display: flex;
-  justify-content: space-around;
-  width: 85vw;
-  flex-direction: column;
-  color:white;
   align-items: flex-start;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   margin:auto;
+  padding-bottom: 42vh;
   padding-left: 5rem;
   padding-top: 5rem;
-  padding-bottom: 42vh;
+  width: 85vw;
 }
 button{
   display: flex;
   justify-content: center;
-  width: 5rem;
   margin: 1rem 0;
+  width: 5rem;
 }
 ul {
   list-style-type: none;
   padding-inline-start: 35px;
 }
 svg {
-  width: 100%;
   visibility: hidden;
+  width: 100%;
 }
 h1 {
   font-size: 7.5em;
-  margin: 15px 0px;
   font-weight:bold;
+  margin: 15px 0px;
 }
 h2 {
   font-weight:bold;

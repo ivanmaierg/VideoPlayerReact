@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { connect } from 'react-redux';
+import { Link, withRouter } from 'react-router-dom';
+
+// eslint-disable-next-line no-unused-vars
+import { registerRequest } from '../../actions/index';
+
 import '../../assets/styles/LoginForm.scss';
 
 const RegisterForm = () => {
@@ -7,9 +13,10 @@ const RegisterForm = () => {
   const handleInputOnChange = (e) => (setFormValues({ ...formValues, [e.target.name]: e.target.value }));
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('submit');
-
+    props.registerRequest(formValues);
+    props.history.push('/');
   };
+
   return (
     <section className='login'>
       <section className='login__container'>
@@ -47,5 +54,8 @@ const RegisterForm = () => {
     </section>
   );
 };
+const mapDispatchToProps = {
+  registerRequest,
+};
 
-export default RegisterForm;
+export default withRouter(connect(null, mapDispatchToProps)(RegisterForm));

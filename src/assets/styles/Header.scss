@@ -1,18 +1,18 @@
 .header {
+    background-color: #181C1F;
+    color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    background-color: #181C1F;
     height: 5rem;
-    color: white;
+    justify-content: space-between;
     margin:auto;
     padding: 1rem;
 }
 .header__container--logo {
-    display: flex;
-    justify-content: center;
     align-items: center;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
 }
 
 .header__logo--img {
@@ -24,17 +24,17 @@
 }
 
 .header__logo--text {
-    font-weight: 700;
     font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
     margin-left: 1rem;
     text-transform: uppercase;
-    letter-spacing: 0.5rem;
 }
 .header__container--logo {
-    display: flex;
-    justify-content: center;
     align-items: center;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
 }
 
 .header__logo--img {
@@ -46,9 +46,9 @@
 }
 
 .header__logo--text {
-    font-weight: 700;
     font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
     margin-left: 1rem;
     text-transform: uppercase;
-    letter-spacing: 0.5rem;
 }

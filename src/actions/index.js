@@ -18,3 +18,8 @@ export const loginRequest = (payload) => ({
 export const logoutRequest = (payload) => ({
   type: types.logoutRequest,
 });
+
+export const registerRequest = (payload) => ({
+  type: types.registerRequest,
+  payload,
+});
