@@ -23,3 +23,8 @@ export const registerRequest = (payload) => ({
   type: types.registerRequest,
   payload,
 });
+
+export const getVideoSource = (payload) => ({
+  type: types.getVideoSource,
+  payload,
+});

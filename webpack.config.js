@@ -7,13 +7,15 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    publicPath: '/',
   },
 
   resolve: {
     extensions: ['.js', '.jsx'],
     alias: {
       '@images': path.resolve(__dirname, '/src/assets/images'),
-    } },
+    },
+  },
   module: {
     rules: [{
       test: /\.(js|jsx)$/,
@@ -38,7 +40,7 @@ module.exports = {
       ],
     },
     {
-      test: /\.(png|gif|jpg|webp)$/,
+      test: /\.(png|gif|jpg|webp|mp4)$/,
       use: [{
         'loader': 'file-loader',
         options: {

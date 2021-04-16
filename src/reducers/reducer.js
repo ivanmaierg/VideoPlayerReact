@@ -22,7 +22,11 @@ const reducer = (state, action) => {
         ...state,
         user: {},
       };
-
+    case types.getVideoSource:
+      return {
+        ...state,
+        playing: state.trends.find((item) => item.id === Number(action.payload)) || state.original.find((item) => item.id === Number(action)) || [],
+      };
     default:
       state;
       return state;

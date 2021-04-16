@@ -8,7 +8,6 @@ import Categories from '../components/Categories';
 import CarrouselItem from '../components/Carrousel/CarrouselItem';
 
 const Home = ({ myList, trends, originals }) => {
-  console.log(myList);
   return (
     <>
       <Search />

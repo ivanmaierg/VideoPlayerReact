@@ -1,26 +1,27 @@
-
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+}
 .container__screen{
     display: flex;
     height: calc(100vh - 8rem);
-}
-.container__movie {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-origin: border-box;
-    height: auto;
-    width: 80vw;
-    margin: 1rem auto;
-    padding: 1rem;
-    overflow: hidden;
+
 }
 .player-back{
-    display: flex;
+    position: absolute;
+    top:0;
+    left: 2rem;
     width: 2rem;
-    align-self: flex-start;
-    justify-content: flex-start;
+    z-index:5;
+    opacity: 40%;
+}
+.player-back{
+    position: absolute;
+    opacity: 100%;
 }
 .player-back__img{
     width: 100%;

@@ -8,7 +8,7 @@ import App from './routes/App';
 
 const initialState = {
   'user': {},
-  'playList': {},
+  'playing': {},
   'myList': [],
   'trends': [
     {
@@ -22,7 +22,7 @@ const initialState = {
       'duration': 164,
       'cover': 'http://dummyimage.com/800x600.png/99118E/ffffff',
       'description': 'Vestibulum ac est lacinia nisi venenatis tristique',
-      'source': 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
+      'source': 'https://www.youtube.com/embed/C2Yd0W1CR5U',
     },
     {
       'id': 3,
@@ -48,7 +48,7 @@ const initialState = {
       'duration': 163,
       'cover': 'http://dummyimage.com/800x600.png/5472FF/ffffff',
       'description': 'Vestibulum ac est lacinia nisi venenatis tristique',
-      'source': 'https://mdstrm.com/video/58333e214ad055d208427db5.mp4',
+      'source': 'http://clips.vorwaerts-gmbh.de/VfE_html5.mp4+++++',
     },
     {
       'id': 5,

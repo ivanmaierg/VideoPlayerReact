@@ -4,5 +4,6 @@ const types = {
   loginRequest: '[LOG Login Request]',
   logoutRequest: '[LOG Logout Request]',
   registerRequest: '[REGISTER Register Request]',
+  getVideoSource: '[GET_VIDEO_SOURCE video]',
 };
 export default types;

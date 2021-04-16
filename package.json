@@ -6,7 +6,8 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "webpack --mode production",
-        "start": "webpack serve --mode development --env development && json-server --watch initialState.json"
+        "start": "webpack serve --mode development --env development",
+        "server-start": "json-server initialState.json"
     },
     "repository": {
         "type": "git",
@@ -21,6 +22,7 @@
     "dependencies": {
         "babel-eslint": "^10.1.0",
         "classname": "^0.0.0",
+        "classnames": "^2.2.6",
         "eslint": "^7.21.0",
         "eslint-config-airbnb": "^18.2.1",
         "eslint-plugin-import": "^2.22.1",
