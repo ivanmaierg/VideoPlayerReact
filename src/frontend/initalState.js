@@ -1,11 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-import reducer from './reducers/reducer';
-import App from './routes/App';
-
 const initialState = {
   'user': {},
   'playing': {},
@@ -171,13 +163,4 @@ const initialState = {
     },
   ],
 };
-
-const store = createStore(reducer, initialState, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
-
-ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
-  document.getElementById('root'),
-);
-
+export default initialState;
