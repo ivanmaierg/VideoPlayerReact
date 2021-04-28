@@ -5,9 +5,9 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { setFavorite, deleteFavorite } from '../../actions/index';
 import '../../assets/styles/Carrousel.scss';
-import playIcon from '../../assets/play-icon.png';
-import deleteIcon from '../../assets/remove-icon.webp';
-import addIcon from '../../assets/plus-icon.png';
+import playIcon from '../../assets/static/play-icon.png';
+import deleteIcon from '../../assets/static/remove-icon.webp';
+import addIcon from '../../assets/static/plus-icon.png';
 
 const CarrouselItem = ({ children, item, isMyList = false, ...props }) => {
   const { id, cover, title, year, contentRating, duration } = item;

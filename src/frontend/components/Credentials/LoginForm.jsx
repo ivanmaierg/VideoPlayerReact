@@ -3,10 +3,10 @@ import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import '../../assets/styles/LoginForm.scss';
 // eslint-disable-next-line import/no-unresolved
-import twitterIcon from '@images/twitter-icon.webp';
 // eslint-disable-next-line import/no-unresolved
-import googleIcon from '@images/google-icon.webp';
 import { Link, withRouter } from 'react-router-dom';
+import googleIcon from '../../assets/static/google-icon.webp';
+import twitterIcon from '../../assets/static/twitter-icon.webp';
 import { loginRequest } from '../../actions/index';
 
 const LoginForm = (props) => {

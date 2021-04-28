@@ -2,8 +2,8 @@ import React from 'react';
 
 import '../../assets/styles/Header.scss';
 import { Link } from 'react-router-dom';
+import logo from '@images/astronomy.png';
 import HeaderMenu from './HeaderMenu';
-import logo from '../../assets/astronomy.png';
 
 const Header = () => {
   return (

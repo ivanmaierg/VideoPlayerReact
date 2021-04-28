@@ -5,7 +5,7 @@ import '../assets/styles/Player.scss';
 import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { getVideoSource } from '../actions/index';
-import arrow from '../assets/images/flecha-izquierda.png';
+import arrow from '../assets/static/flecha-izquierda.png';
 // import max from '../assets/images/maximizar.png';
 
 const Player = ({ history, match, playing, getVideoSource }) => {
