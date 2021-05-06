@@ -1,0 +1,66 @@
+.categories{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow:hidden
+}
+.categories__title {
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 0;
+    margin-top: 2rem;
+    overflow: hidden;
+    position: absolute;
+    width: 90%;
+}
+
+.carousel__container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    left: 9rem;
+    margin:4rem 0;
+    min-width: 100vw;
+    padding: 0 2rem;
+    position: relative;
+    white-space: nowrap;
+}
+.carousel {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:1rem;
+    margin: auto;
+    overflow-x: scroll;
+    padding: 1rem 0;
+    position: relative;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    width: 100%;
+}
+
+
+/* width */
+
+.carousel::-webkit-scrollbar {
+    height: 10px;
+    width: 5px;
+}
+
+
+/* Track */
+
+.carousel::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+.carousel::-webkit-scrollbar-thumb {
+    background: rgba(231, 231, 231, 0.438);
+    border-radius: 10px;
+}

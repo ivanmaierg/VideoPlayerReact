@@ -1,0 +1,234 @@
+.login {
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;
+    min-height: calc(100vh - 9rem);
+    padding: 0 1rem;
+}
+
+.login__container {
+    background-color: #a4b0b900;
+    border-radius: 40px;
+    border: 2px white solid;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    padding: 3rem 3rem 3rem;
+    width: 25rem;
+}
+
+.login__container--form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    
+}
+
+.login__container--remember-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    bottom: -50px;
+    color: white;
+    font-size: 0.8rem;
+    width: 100%;
+}
+
+.login__container--remember-me label input {
+    padding: 0;
+}
+
+.login__container--remember-me a {
+    margin:auto;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.login__container--remember-me a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.login__container--social-media>div {
+    align-items: flex-end;
+    display: flex;
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+    margin-top: 0.8rem
+}
+
+.login__container--social-media>div:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.login__container--social-media>div>img {
+    width: 1.2rem;
+    margin-right: 0.4rem;
+}
+
+.login__container--register {
+    display: flex;
+    font-size: 0.8rem;
+    justify-content: space-evenly;
+}
+.login__container--register {
+    font-size: 1.1rem;
+    margin-top: 1rem ;
+}
+
+.login__container--register a {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login__container--register a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width:600px) {
+    .login {
+        height: 100%;
+    }
+    .login__container {
+        border-radius: 0;
+        border: none;
+        padding: 1rem;
+        width: auto;
+    }
+    .login__container--register {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 1rem
+    }
+    .login__container--register a{
+        margin-top: 1rem;
+    }
+    .login__container--social-media {
+        margin-top: 1rem;
+    }
+    .login__container--remember-me{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (min-width:1280px) {
+    .login__container {
+        border: 2px white solid;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-around;
+        padding: 3rem 3rem 3rem;
+        width: 25rem;
+    }
+}
+
+//login button
+
+.login__change-status-button{
+    background-color: transparent;
+    border: none;
+    color:white;
+    
+}
+.login__change-status-button:hover{
+       cursor: pointer;
+       text-decoration: underline; 
+    }
+//checkbox
+.container--checkbox {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+    display: block;
+    font-size: 1rem;
+    font-size: 22px;
+    margin-bottom: 12px;
+    padding-left: 35px;
+    position: relative;
+    user-select: none;
+}
+
+
+/* Hide the browser's default checkbox */
+
+.container--checkbox input {
+    cursor: pointer;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    width: 0;
+}
+
+
+/* Create a custom checkbox */
+
+.checkmark {
+    background-color: #eee;
+    height: 1rem;
+    left: 10px;
+    position: absolute;
+    top: 2px;
+    width: 1rem;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.container--checkbox:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+
+/* When the checkbox is checked, add a blue background */
+
+.container--checkbox input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the checkmark when checked */
+
+.container--checkbox input:checked~.checkmark:after {
+    display: block;
+}
+
+
+/* Style the checkmark/indicator */
+
+.container--checkbox .checkmark:after {
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    border-width: 0 2px 2px 0;
+    border: solid white;
+    height: 10px;
+    left: 7px;
+    top: 2px;
+    width: 3px;
+}

@@ -1,0 +1,19 @@
+.footer {
+    align-items: center;
+    background-color: #181C1F;
+    display: flex;
+    height: 3rem;
+    width: 100%;
+}
+
+.footer a {
+    color: white;
+    cursor: pointer;
+    font-size: 0.8rem;
+    padding-left: 1rem;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,46 @@
+
+.button {
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.014);
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.342);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 3.2rem;
+    justify-content: center;
+    letter-spacing: 1px;
+    margin: 2rem 0rem;
+    width: 10rem;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.144);
+    transition: ease-in 0.2s;
+}
+
+.btn {
+    align-items: center;
+    background-color: rgba(134, 124, 124, 0.322);
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.342);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 1.5rem;
+    letter-spacing: 1px;
+    padding: 0.5rem;
+    text-align: center;
+    width:auto;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.164);
+    transition: ease-in 0.2s;
+}

@@ -1,0 +1,58 @@
+.main {
+    align-items: center;
+    background-image: url('../static/earth.jpg');
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    justify-content: center;
+
+}
+
+.main__title {
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.input {
+    background-color: transparent;
+      border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.466);
+  
+    color: white;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 1rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+    padding: 0px 1rem;
+    width: 100%;
+}
+
+.input:focus {
+    border-bottom: 3px solid rgba(255, 255, 255, 1);
+    outline: none;
+    transition: ease-in .2s;
+}
+
+ ::placeholder {
+    color: rgba(255, 255, 255, 0.356)
+}
+
+.input-search {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    color: white;
+    height: 2.5rem;
+    outline: none;
+    padding: 0 1rem;
+    transition: ease-in .1s;
+    width: 70%;
+}
+
+.input-search:focus {
+    border: 2px solid rgba(255, 255, 255, 0.8);
+}
